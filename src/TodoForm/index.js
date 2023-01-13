@@ -8,7 +8,7 @@ function TodoForm() {
     addTodo,
     setOpenModal,
   } = React.useContext(TodoContext);
-  
+
   const onChange = (event) => {
     setNewTodoValue(event.target.value);
   };
@@ -27,14 +27,14 @@ function TodoForm() {
       <textarea
         value={newTodoValue}
         onChange={onChange}
-        placeholder="Cortar la cebolla oara el almuerzo"
+        placeholder="Cortar la cebolla para el almuerzo"
       />
       <div className="TodoForm-buttonContainer">
         <button
           type="button"
           className="TodoForm-button TodoForm-button--cancel"
           onClick={onCancel}
-          >
+        >
           Cancelar
         </button>
         <button
