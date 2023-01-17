@@ -11,7 +11,7 @@ import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal';
 import { TodoHeader } from '../TodoHeader'
 import { useTodos } from '../hooks/useTodos'
-
+import { ChangeAlert } from '../ChangeAlert/index'
 
 function App() {
   const {
@@ -26,7 +26,8 @@ function App() {
     completedTodos,
     searchValue,
     setSearchValue,
-    addTodo
+    addTodo,
+    sincronizeTodos
   } = useTodos();
 
   return (
@@ -77,6 +78,8 @@ function App() {
       <CreateTodoButton
         setOpenModal={setOpenModal}
       />
+
+      <ChangeAlert sincronizeTodos={sincronizeTodos} />
     </React.Fragment >
   );
 }
