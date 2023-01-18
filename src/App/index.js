@@ -53,6 +53,7 @@ function App() {
             key={todo.text}
             text={todo.text}
             completed={todo.completed}
+            sincro
             onComplete={() => completeTodo(todo.text)}
             onDelete={() => deleteTodo(todo.text)}
           />)
