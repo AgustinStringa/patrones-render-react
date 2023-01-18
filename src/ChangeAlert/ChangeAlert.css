@@ -1,0 +1,21 @@
+.changeContainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+.alert-content {
+  width: 100%;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(49, 50, 50);
+  align-items: center;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+}
